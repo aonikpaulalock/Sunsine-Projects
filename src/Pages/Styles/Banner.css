@@ -1,0 +1,29 @@
+.banner{
+  height: 85vh;
+}
+.content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color:rgba(0, 0, 0, 0.713);
+  letter-spacing: 2px;
+}
+.content h5{
+  font-weight: 400;
+  color: rgb(77, 77, 77);
+  padding: 8px 0px;
+}
+.content p {
+  color: rgb(121, 121, 121);
+  font-size: 18px;
+  padding-bottom: 5px;
+  text-align: justify;
+}
+.Hire-BTN{
+  padding: 12px 50px;
+  border: none;
+  background-color: rgb(93, 87, 254);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
