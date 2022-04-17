@@ -22,6 +22,11 @@
 .price span {
   color:rgb(93, 87, 254);
 }
+.Description{
+  font-size: 17px;
+  text-align: justify;
+  color: gray;
+}
 .heading{
   font-size: 40px;
   font-weight: 700;

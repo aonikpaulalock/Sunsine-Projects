@@ -9,12 +9,12 @@ const Footer = () => {
   return (
     <div className="footer p-5 mt-5">
      <div className="container text-center">
-       <h1 className="head">Fellow Me</h1>
+       <h3 className="head">Fellow Me</h3>
        <p className="paragraph">Always creative Photographty </p>
        <div className="image">
-         <img src={facebook} alt=""  width="100px"className="bg-white m-4 rounded" />
-         <img src={youtube} alt=""  width="100px"className="bg-white m-4 rounded" />
-         <img src={instagram} alt=""  width="100px"className="bg-white m-4 rounded" />
+         <img src={facebook} alt=""  width="70px"className="bg-white m-3 rounded" />
+         <img src={youtube} alt=""  width="70px"className="bg-white m-3 rounded" />
+         <img src={instagram} alt=""  width="70px"className="bg-white m-3 rounded" />
        </div>
      <h5 className="fw-lighter text-muted"> &copy; All rights reserved Copyrights {year}</h5>
      </div>

@@ -1,0 +1,78 @@
+.form-background {
+  background-color: rgb(246, 246, 255);
+  width: 400px;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 18px;
+  box-shadow: 3px 3px 5px #ddd,-3px 3px 5px #ddd;
+}
+.input-design {
+  border:none ;
+  padding: 10px 15px;
+  box-shadow: 3px 3px 5px rgb(179, 179, 179);
+  outline: none;
+  border-top-left-radius:25px;
+  border-bottom-right-radius: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+  display: block;
+  width: 95%;
+  margin: 30px auto;
+  
+}
+.heding-signup {
+  color:rgba(0, 0, 0, 0.713);
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 28px;
+  padding-bottom:20px;
+}
+.level-design {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: rgb(113, 113, 113);
+  font-weight: 500;
+  margin: 10px 0px;
+  text-align: center;
+ 
+}
+.signup-button{
+  margin-top: 20px;
+  padding: 7px 60px;
+  background-color: rgb(93, 87, 254);
+  border: 0;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: rgb(239, 239, 239);
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+.log-sign {
+  font-size: 18px;
+  text-align: center;
+  padding:10px 0px ;
+  color:rgba(0, 0, 0, 0.713);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.toggle-link{
+  color:rgb(93, 87, 254);
+  text-decoration: none;
+  cursor: pointer;
+}
+.social{
+  color: rgb(100, 0, 171);
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 15px;
+  font-weight: 500;
+}
+
+/* Media quaries */
+@media (max-width:400px) {
+  .form-background {
+    width: 100%;
+  }
+}

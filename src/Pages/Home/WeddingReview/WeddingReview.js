@@ -24,7 +24,7 @@ const WeddingReview = () => {
   return (
     <div className='container mt-5' id="REVIEW">
       <h1 className="heading pb-4">Customer Review</h1>
-      <div className="row">
+      <div className="row g-4">
         {
           reviews.map(review => <Review
             review={review}
