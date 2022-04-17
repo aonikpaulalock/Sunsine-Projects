@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="container banner">
       <div className="row mt-5">
         <div className="col-md-6">
-          <div className="content mt-3">
+          <div className="content mt-3 p-3">
             <h1> Hello,<br></br>I'm <span>JHON</span></h1>
             <h5>WEDDING PHOTOGRAPHER</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea ex obcaecati, distinctio quos maiores quaerat sapiente atque id amet!</p>

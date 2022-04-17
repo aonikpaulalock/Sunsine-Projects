@@ -1,0 +1,31 @@
+.service-btn{
+    padding: 12px 25px;
+    border: none;
+    background-color: rgb(93, 87, 254);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.name-title{
+  font-weight: 700;
+  font-size: 23px;
+  color:rgba(0, 0, 0, 0.713);
+  letter-spacing: 1px;
+}
+.price{
+ color:rgba(0, 0, 0, 0.713) ;
+ font-weight: bold;
+ font-size: 20px;
+}
+.price span {
+  color:rgb(93, 87, 254);
+}
+.heading{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.713);
+  text-align: center;
+  letter-spacing: 1px;
+}

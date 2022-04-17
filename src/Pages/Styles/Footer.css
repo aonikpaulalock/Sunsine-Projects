@@ -1,0 +1,17 @@
+.footer{
+  background-color: rgb(245, 245, 245);
+}
+.head {
+  font-size: 40px;
+  font-weight: 700;
+  color:rgba(0, 0, 0, 0.713);
+  letter-spacing: 2px;
+}
+.paragraph {
+  font-size:20px;
+  font-weight: 400;
+  color:rgba(122, 122, 122, 0.713);
+}
+.image img {
+  cursor: pointer;
+}

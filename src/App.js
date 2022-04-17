@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
+import About from './Pages/About/About';
+import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home/Home';
-import Services from './Pages/Home/Services/Services';
-import WeddingGallery from './Pages/Home/WeddingGallery/WeddingGallery';
 import Login from './Pages/Login/Login/Login';
 import Signup from './Pages/Login/Signup/Signup';
 import Footer from './Pages/Sheared/Footer/Footer';
@@ -15,8 +15,9 @@ function App() {
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/service' element={<Services/>}></Route>
-        <Route path='/gallery' element={<WeddingGallery/>}></Route>
+        <Route path='/home' element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/blogs" element={<Blogs/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="*" element={<Notfound/>}></Route>
