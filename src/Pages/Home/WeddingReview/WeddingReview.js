@@ -22,7 +22,7 @@ const reviews = [
 ]
 const WeddingReview = () => {
   return (
-    <div className='container mt-5' id="REVIEW">
+    <div className='container mt-sm-5 mt-3' id="REVIEW">
       <h1 className="heading pb-4">Customer Review</h1>
       <div className="row g-4">
         {

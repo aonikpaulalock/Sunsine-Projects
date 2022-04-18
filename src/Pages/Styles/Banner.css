@@ -24,3 +24,10 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+/* Media Quries */
+@media (max-width:450px) {
+  .content h1 {
+    font-size: 40px;
+  }
+}

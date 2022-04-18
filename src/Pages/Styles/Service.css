@@ -34,3 +34,10 @@
   text-align: center;
   letter-spacing: 1px;
 }
+
+/* Media Quaries */
+@media (max-width:450px) {
+  .heading{
+    font-size: 32px;
+  }
+}
