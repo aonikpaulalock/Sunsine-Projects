@@ -15,6 +15,7 @@ const Login = () => {
   const location = useLocation()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [loginError, setloginError] = useState('')
   const [
     signInWithEmailAndPassword,
     user,
@@ -41,12 +42,20 @@ const Login = () => {
 
   const handleAllSubmit = event => {
     event.preventDefault();
+
+    if(password.length < 7 ) {
+    setloginError('Please type minimum 8 charchter')
+    return;
+    }
+
     signInWithEmailAndPassword(email, password)
   }
+
   const passwordReset = async (event) => {
     await sendPasswordResetEmail(email);
     toast('Reset Password Verifaction Message Sent');
   }
+  
   return (
     <div className="form-background">
       <Form onSubmit={handleAllSubmit}>
@@ -57,6 +66,7 @@ const Login = () => {
         </Form.Group>
         <Form.Group className="">
           <Form.Control onBlur={handleLoginPassword} type="password" placeholder="Password" className="input-design" required />
+          <h6 className='text-center text-danger'>{loginError}</h6>
         </Form.Group>
         <button type="submit" className="signup-button">Login</button>
       </Form>
