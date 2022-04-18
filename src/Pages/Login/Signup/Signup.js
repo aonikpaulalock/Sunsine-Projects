@@ -13,7 +13,7 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [error, setError] = useState('')
 
-  const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true })
+  const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true })
 
   const handleEmail = event => {
     setEmail(event.target.value)
@@ -39,9 +39,7 @@ const Signup = () => {
     }
     createUserWithEmailAndPassword(email, password);
   }
-  // if(user){
-  //   toast.success('From Submited Successfully',navigate('/'))
-  //  }
+
   useEffect(() => {
     if (user) {
       navigate('/')

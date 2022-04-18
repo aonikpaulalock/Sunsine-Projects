@@ -7,3 +7,11 @@
   font-weight: 700;
   font-size: 25px;
 }
+
+/* Media Quries */
+@media (max-width:410px) {
+  .Nav-Title{
+    font-weight: 600;
+    font-size: 19px;
+  }
+}

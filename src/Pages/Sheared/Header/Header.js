@@ -11,7 +11,7 @@ const Header = () => {
     <Navbar collapseOnSelect className="py-3 Nav-Bg" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/" className="Nav-Title">
-          WED-GRAPHY
+          WEDDING_PHOTOGRAPHY
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,10 +27,10 @@ const Header = () => {
               SIGNUP
             </Nav.Link>
             {!user ?
-            <Nav.Link as={Link} to="/login" className="fw-bold">LOGIN</Nav.Link>
-            :
-            <Nav.Link className="fw-bold" onClick={()=>signOut(auth)}>LOGOUT</Nav.Link>
-          }
+              <Nav.Link as={Link} to="/login" className="fw-bold">LOGIN</Nav.Link>
+              :
+              <Nav.Link className="fw-bold" onClick={() => signOut(auth)}>LOGOUT</Nav.Link>
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>

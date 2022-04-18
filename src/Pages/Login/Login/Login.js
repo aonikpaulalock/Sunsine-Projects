@@ -45,7 +45,7 @@ const Login = () => {
   }
   const passwordReset = async (event) => {
     await sendPasswordResetEmail(email);
-    toast('Reset Verifaction Sent');
+    toast('Reset Password Verifaction Message Sent');
   }
   return (
     <div className="form-background">
@@ -70,9 +70,6 @@ const Login = () => {
       <Provider />
       <div>
         <h5 style={{ color: 'red' }}>{error?.message}</h5>
-        {
-          loading && <p>Loading .......... </p>
-        }
       </div>
       <ToastContainer />
     </div>
