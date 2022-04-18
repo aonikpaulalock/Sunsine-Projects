@@ -1,7 +1,7 @@
 # WEDDING_PHOTOGRAPHY PROJECTS
 
 # Projects Live Host Link
-This project was bootstrapped with(https://wedding-photographer-d90bb.firebaseapp.com/).
+This project was bootstrapped with(https://wedding-photographer-d90bb.firebaseapp.com/.
 # Features
 * Create Navber Components and Use five Links
 * Create Home Components And Inside three Componets service,review,footer 
