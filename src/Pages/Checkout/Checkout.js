@@ -1,43 +1,39 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import {useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import auth from '../../Firebase.init';
 const Checkout = () => {
-  const navigate = useNavigate();
   // Input and Error State Field
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [confirmPassword, setConfirmPassword] = useState('')
+  const [adress, setAdress] = useState('')
+  const [phone, setPhone] = useState('')
   const [error, setError] = useState('')
-
-  const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword()
-
+  const [user] = useAuthState(auth)
+  const handlePhone = event => {
+    setPhone(event.target.value)
+  }
   const handleEmail = event => {
     setEmail(event.target.value)
   }
-
-  const handlePassword = event => {
-    setPassword(event.target.value)
+  const handleAdress = event => {
+    setAdress(event.target.value)
   }
 
-  const handleConfirmPassword = event => {
-    setConfirmPassword(event.target.value)
+  const handleName = event => {
+    setName(event.target.value)
   }
 
   const handleSubmit = event => {
     event.preventDefault()
-    if (password !== confirmPassword) {
-      setError("Don't match password")
-      return;
-    }
-    createUserWithEmailAndPassword(email, password)
+    setName('')
+    setAdress('')
+    setPhone('')
+    toast('Your Booking Completed')
   }
-  useEffect(() => {
-    if (user) {
-      navigate('/')
-    }
-  }, [user])
 
   return (
     <div className="form-background">
@@ -47,19 +43,21 @@ const Checkout = () => {
           <Form.Control type="text" placeholder="Enter Name"
             className="input-design"
             required
+            onBlur={handleName}
           />
         </Form.Group>
         <Form.Group className="">
-          <Form.Control  type="email" placeholder="Your Email" className="input-design" required />
+          <Form.Control type="email" placeholder="Your Email" className="input-design" required value={user?.email} readOnly />
         </Form.Group>
         <Form.Group className="">
-          <Form.Control onBlur={handleConfirmPassword} type="text" placeholder="Your Adress" className="input-design" required />
+          <Form.Control onBlur={handleAdress} type="text" placeholder="Your Adress" className="input-design" required />
         </Form.Group>
         <Form.Group className="">
-          <Form.Control onBlur={handleConfirmPassword} type="text" placeholder="Phone Number" className="input-design" required />
+          <Form.Control onBlur={handlePhone} type="text" placeholder="Phone Number" className="input-design" required />
         </Form.Group>
         <button type="submit" className="signup-button">Checkout</button>
       </Form>
+      <ToastContainer />
     </div>
   );
 };

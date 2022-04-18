@@ -32,7 +32,7 @@ const Login = () => {
   }
 
   const handleLoginEmail = event => {
-    setEmail(event.target.value)
+    setEmail(event.target.value);
   }
 
   const handleLoginPassword = event => {

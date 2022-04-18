@@ -3,8 +3,6 @@ import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import '../../Styles/Signup.css'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Provider from '../Provider/Provider';
 import auth from '../../../Firebase.init';
 const Signup = () => {
@@ -15,7 +13,7 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [error, setError] = useState('')
 
-  const [createUserWithEmailAndPassword, user,loading] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true})
+  const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true })
 
   const handleEmail = event => {
     setEmail(event.target.value)
@@ -35,25 +33,27 @@ const Signup = () => {
       setError("Don't match password")
       return;
     }
-    if (password.length < 7 ) {
+    if (password.length < 7) {
       setError("Please type minimum 8 charchter")
       return;
     }
-    createUserWithEmailAndPassword(email, password)
-    toast.success('From Submited Successfully')
+    createUserWithEmailAndPassword(email, password);
   }
-    useEffect(()=>{
-     if(user){
-       navigate('/')
-     }
-    },[user])
+  // if(user){
+  //   toast.success('From Submited Successfully',navigate('/'))
+  //  }
+  useEffect(() => {
+    if (user) {
+      navigate('/')
+    }
+  }, [user]);
 
   return (
     <div className="form-background">
       <Form onSubmit={handleSubmit}>
         <h3 className="heding-signup">Signup</h3>
         <Form.Group className="">
-          <Form.Control onBlur={handleEmail} type="email"    placeholder="Enter Email"
+          <Form.Control onBlur={handleEmail} type="email" placeholder="Enter Email"
             className="input-design"
             required
           />
@@ -71,7 +71,6 @@ const Signup = () => {
         Already An Account ? <Link to='/login' className='toggle-link'>Login</Link>
       </p>
       <Provider />
-      <ToastContainer />
     </div>
   );
 };

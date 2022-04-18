@@ -1,7 +1,20 @@
-# Getting Started with Create React App
+# WEDDING_PHOTOGRAPHY PROJECTS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projects Live Host Link
+This project was bootstrapped with(wedding-photographer-d90bb.web.app).
+# Features
+* Create Navber Components and Use five Links
+* Create Home Components And Inside three Componets service,review,footer 
+* Single Service button clicked and go checkout page
+* if user not login checkout page protected and if user login then move to checkout page ;
+* Implements signin, signout and signup authentication and try to unque design
 
+# Technologies Used
+* React-Boostrap
+* React-Toastify
+* React-Router
+* Firebase
+* React-firebase-hooks
 ## Available Scripts
 
 In the project directory, you can run:
