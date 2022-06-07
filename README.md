@@ -3,11 +3,11 @@
 # Projects Live Host Link
 This project was bootstrapped with ( https://wedding-photographer-d90bb.firebaseapp.com/ )
 # Features
-* Create Navber Components and Use five Links
-* Create Home Components And Inside three Componets service,review,footer 
-* Single Service button clicked and go checkout page
-* if user not login checkout page protected and if user login then move to checkout page ;
-* Implements signin, signout and signup authentication and try to unque design
+* It’s an Independent service provider website 
+* Users can quickly log in threre by Email-password and login with Github or
+Google account also.
+* If user has been login there account they can easily see their checkout page.
+* Implements signin, signout and signup authentication and try to unique design
 
 # Technologies Used
 * React-Boostrap
