@@ -14,6 +14,7 @@ import Notfound from './Pages/Sheared/Notfound/Notfound';
 function App() {
   return (
     <>
+    <h1>Git ADed</h1>
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
